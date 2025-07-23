@@ -227,3 +227,76 @@ body {
     padding: 0.4rem 0.9rem;
   }
 }
+/* ===== FLOWER & PLANTS LOVER SECTION ===== */
+.plants-lover {
+  padding: 4rem 0;
+  background-color: #f8faff;
+}
+
+.lover-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.lover-image {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.lover-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+}
+
+.lover-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lover-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.lover-text .orange {
+  color: #f26522;
+}
+
+.lover-text ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #555;
+}
+
+.lover-text ul li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .lover-wrapper {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .lover-text h2 {
+    font-size: 1.5rem;
+  }
+}
