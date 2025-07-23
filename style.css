@@ -404,3 +404,49 @@ body {
     font-size: 0.95rem;
   }
 }
+.join-section {
+  background-image: url('assets/news-letter-bg.png'); /* Use your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.join-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.join-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.join-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.join-form input {
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.join-form button {
+  padding: 10px 20px;
+  background-color: #f15a24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
