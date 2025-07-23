@@ -1,0 +1,229 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8faff;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #f8faff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  padding: 3rem 0;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.banner-text .black {
+  color: #000;
+  font-weight: 900;
+}
+
+.banner-text .orange {
+  color: #f26522;
+  font-weight: 900;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar .container {
+    justify-content: space-between;
+  }
+
+  .cart span {
+    font-size: 0.9rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .banner-text {
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .banner-image {
+    order: 1;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== OUR PLANTS SECTION ===== */
+.our-plants {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header .orange {
+  color: #f26522;
+  font-weight: bold;
+}
+
+.section-header p {
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.plant-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.plant-card h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.plant-card .price {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.plant-card button {
+  background-color: #f26522;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.plant-card button:hover {
+  background-color: #d6531f;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .plant-card button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.9rem;
+  }
+}
