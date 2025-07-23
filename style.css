@@ -247,7 +247,7 @@ body {
   min-width: 300px;
 }
 
-.lover-image img {
+.lover-image img:first-child {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -255,10 +255,10 @@ body {
 
 .trusted-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 80px;
-}
+  top: -55px;     
+  right: -55px;   
+  width: 170px;
+  z-index: 10;
 
 .lover-text {
   flex: 1;
