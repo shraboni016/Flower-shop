@@ -209,10 +209,15 @@ body {
 
 .trusted-badge {
   position: absolute;
-  top: -80px;     
-  right: -80px;   
+  top: -78px;     
+  right: -78px;   
   width: 260px;
   z-index: 10;
+  animation: spin 6s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 .lover-text {
   flex: 1;
