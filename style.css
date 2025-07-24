@@ -461,6 +461,9 @@ body {
     font-size: 0.9rem;
     padding: 0.6rem 3.8rem;
   }
+  .hide{
+    display: none;
+  }
   .lover-wrapper {
     flex-direction: column;
     text-align: left;
