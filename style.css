@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f8faff;
+  background-color: #f6faff;
   color: #333;
 }
 
@@ -97,41 +97,6 @@ body {
   max-width: 100%;
   height: auto;
 }
-
-/* ===== RESPONSIVE (MOBILE) ===== */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .navbar .container {
-    justify-content: space-between;
-  }
-
-  .cart span {
-    font-size: 0.9rem;
-  }
-
-  .banner-content {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .banner-text {
-    order: 2;
-    margin-top: 2rem;
-  }
-
-  .banner-image {
-    order: 1;
-    text-align: center;
-  }
-
-  .banner-text h1 {
-    font-size: 2rem;
-  }
-}
-
 /* ===== OUR PLANTS SECTION ===== */
 .our-plants {
   padding: 4rem 0;
@@ -211,22 +176,6 @@ body {
   background-color: #d6531f;
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .plant-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-
-  .section-header h2 {
-    font-size: 1.6rem;
-  }
-
-  .plant-card button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.9rem;
-  }
-}
 /* ===== FLOWER & PLANTS LOVER SECTION ===== */
 .plants-lover {
   padding: 4rem 0;
@@ -283,21 +232,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .lover-wrapper {
-    flex-direction: column;
-    text-align: left;
-  }
-  
-  .trusted-badge {
-    display: none ;
-  }
-
-  .lover-text h1 {
-    font-size: 2rem;
-  }
-}
 /* ===== LATEST DEALS SECTION ===== */
 .latest-deals {
   padding: 4rem 1rem;
@@ -378,34 +312,8 @@ body {
   font-weight: 500;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .deal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .deal-stack {
-    flex-direction: column;
-  }
-
-  .deal-card {
-    width: 100%;
-  }
-
-  .deal-text h3 {
-    font-size: 1rem;
-  }
-
-  .latest-deals .section-header h2 {
-    font-size: 1.6rem;
-  }
-
-  .latest-deals .section-header p {
-    font-size: 0.95rem;
-  }
-}
 .join-section {
-  background-image: url('assets/news-letter-bg.png'); /* Use your actual image path */
+  background-image: url('assets/news-letter-bg.png'); 
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -445,6 +353,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
 .footer {
   border-left: 2px solid #ccc;
   border-right: 2px solid #ccc;
@@ -510,7 +419,109 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar .container {
+    justify-content: space-between;
+  }
+
+  .cart span {
+    font-size: 0.9rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .banner-text {
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .banner-image {
+    order: 1;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .plant-card button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.9rem;
+  }
+  .lover-wrapper {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .trusted-badge {
+    display: none ;
+  }
+
+  .lover-text h1 {
+    font-size: 2rem;
+  }
+
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-stack {
+    flex-direction: column;
+  }
+
+  .deal-card {
+    width: 100%;
+  }
+
+  .deal-text h3 {
+    font-size: 1rem;
+  }
+
+  .latest-deals .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .latest-deals .section-header p {
+    font-size: 0.95rem;
+  }
+  .join-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .join-form {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .join-form input {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  }
+
+  .join-form button {
+    font-size: 0.95rem;
+    padding: 12px 18px;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
@@ -538,4 +549,3 @@ body {
     justify-content: flex-start;
   }
 }
-
