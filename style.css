@@ -25,29 +25,38 @@ body {
 
 .navbar .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  flex: 2; 
+  margin-left: 700px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #000;
+  color: #6c6c6c;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
-
+.nav-links a:hover {
+  color: #000000;
+}
 .cart {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-left: 0;
 }
 
 .cart img {
@@ -196,7 +205,6 @@ body {
 .lover-image img:first-child {
   width: 100%;
   height: 597Hug;
-  border-radius: 8px;
 }
 
 .trusted-badge {
